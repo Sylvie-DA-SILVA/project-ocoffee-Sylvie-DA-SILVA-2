@@ -1,3 +1,6 @@
+// Load environnment variables from .env
+require("dotenv/config");
+
 // Import NPM modules
 const express = require("express"); // Syntaxe CJS
 
@@ -21,7 +24,7 @@ app.use("/favicon.ico", express.static("./public/images/logo.svg"));
 app.use(router);
 
 // Start server
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`🚀 oCoffee app started at http://localhost:${port}`);
 });

@@ -29,35 +29,17 @@
       <h2>Nouveautés</h2>
       
       <ul>
-        <li>
-          <article>
-            <img src="/images/coffees/100955890.png" alt="Ethiopian Yirgacheffe">
-            <div>
-              <h3>Ethiopian Yirgacheffe</h3>
-              <a class="button-outline" href="#">Voir le détail</a>
-            </div>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <img src="/images/coffees/100955890.png" alt="Ethiopian Yirgacheffe">
-            <div>
-              <h3>Ethiopian Yirgacheffe</h3>
-              <a class="button-outline" href="#">Voir le détail</a>
-            </div>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <img src="/images/coffees/100955890.png" alt="Ethiopian Yirgacheffe">
-            <div>
-              <h3>Ethiopian Yirgacheffe</h3>
-              <a class="button-outline" href="#">Voir le détail</a>
-            </div>
-          </article>
-        </li>
+        <% articles.forEach(article => { %>
+          <li>
+            <article>
+              <img src="/images/coffees/<%= article.reference %>.png" alt="<%= article.name %>">
+              <div>
+                <h3><%= article.name %></h3>
+                <a class="button-outline" href="/article/<%= article.id %>">Voir le détail</a>
+              </div>
+            </article> 
+          </li>
+        <% }) %>
 
       </ul>
     </section>

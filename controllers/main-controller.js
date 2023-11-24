@@ -5,6 +5,10 @@ const mainController = {
 
   renderCatalogPage(req, res) {
     res.render("pages/catalog");
+  },
+
+  renderCoffeeDetailsPage(req, res) {
+    res.render("pages/article");
   }
 };
 

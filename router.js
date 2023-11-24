@@ -7,4 +7,8 @@ router.get("/", mainController.renderHomePage);
 router.get("/catalog", mainController.renderCatalogPage);
 router.get("/article/:id", mainController.renderCoffeeDetailsPage);
 
+router.use((req, res) => {
+  res.status(404).render("pages/not-found");
+});
+
 module.exports = router;

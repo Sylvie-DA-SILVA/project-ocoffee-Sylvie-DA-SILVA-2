@@ -9,6 +9,10 @@
     "café",
     "boutique"
   ],
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
   "author": "contact@oclock.io",
   "license": "ISC",
   "dependencies": {

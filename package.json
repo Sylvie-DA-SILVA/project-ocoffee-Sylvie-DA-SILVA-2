@@ -1,0 +1,11 @@
+{
+  "name": "ocoffee",
+  "version": "1.0.0",
+  "description": "ocoffee, boutique de café à Hauts-de-Cloques par les frère Pepper",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": ["café", "boutique"],
+  "author": "contact@oclock.io",
+  "license": "ISC"
+}

@@ -1,5 +1,8 @@
-// Import NPM module
+// Import NPM modules
 const express = require("express"); // Syntaxe CJS
+
+// Import local modules
+const router = require("./router");
 
 // Create Express app
 const app = express();
@@ -14,14 +17,8 @@ app.use(express.static("./public"));
 // Favicon static route
 app.use("/favicon.ico", express.static("./public/images/logo.svg"));
 
-// Configure Express app
-app.get("/", (req, res) => {
-  res.render("pages/home");
-});
-
-app.get("/catalog", (req, res) => {
-  res.render("pages/catalog");
-});
+// Plug routes on app
+app.use(router);
 
 // Start server
 const port = 3000;

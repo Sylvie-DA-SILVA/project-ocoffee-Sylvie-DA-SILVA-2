@@ -4,8 +4,12 @@ const express = require("express"); // Syntaxe CJS
 // Create Express app
 const app = express();
 
+// Configure view engine
 app.set("view engine", "ejs");
 app.set("views", "./views");
+
+// Configure assets routes (static folder)
+app.use(express.static("./public"));
 
 // Configure Express app
 app.get("/", (req, res) => {

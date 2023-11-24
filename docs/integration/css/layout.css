@@ -94,7 +94,7 @@ header button {
 @media screen and (max-width: 1280px) {
   /* Hide all menu links on small screen by default */
   header ul {
-      display: none;
+    display: none;
   }
 }
 
@@ -122,9 +122,9 @@ header nav.expanded {
 /* Bonus : extra animation */
 @keyframes menu-slide-in {
   from {
-      width:  0vw;
-      padding: 4rem 0rem;
-      color: var(--color-dark);
+    width:  0vw;
+    padding: 4rem 0rem;
+    color: var(--color-dark);
   }
 }
 

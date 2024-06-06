@@ -1,6 +1,9 @@
+const dataMapper = require("../database/dataMapper");
+
 const mainController = {
-  renderHomePage(req, res) {
-    res.render("pages/home");
+  async renderHomePage(req, res) {
+    const articles = await dataMapper.getLatestsProducts();
+    res.render("pages/home", { articles });
   },
 
   renderCatalogPage(req, res) {

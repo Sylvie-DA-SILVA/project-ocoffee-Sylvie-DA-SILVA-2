@@ -7,7 +7,7 @@ const mainController = {
   },
 
   async renderCatalogPage(req, res) {
-    const articles = await dataMapper.getLimitedProducts(); // Limité à 8 produits
+    const articles = await dataMapper.getLimitedProducts(); // Limité à 6 produits
     res.render("pages/catalog", { articles });
   },
 

@@ -8,7 +8,7 @@ const dataMapper = {
   },
 
   async getLimitedProducts() {
-    const result = await db.query('SELECT * FROM coffee ORDER BY created_at DESC LIMIT 8');
+    const result = await db.query('SELECT * FROM coffee ORDER BY created_at DESC LIMIT 6');
     const products = result.rows;
     return products;
   },
